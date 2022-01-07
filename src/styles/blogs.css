@@ -1,0 +1,55 @@
+  .blogs-container h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.blogs-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic-portrait{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .user-profile-pic{
+    width: 100%;
+    height: auto;
+  }
+  
+  .user-profile-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 25%;
+    background: linear-gradient(#D2FFEC 18%,#ffffff 100%);
+    width:600p;
+  }
+  
+  .workout-description-container{
+    margin-top: 3%;
+    margin-left: 5%;
+  }
+  
+  .workoutscript-username-title{
+    font-size: 30px;
+  }
+  
+  .real-name-title{
+    font-size: 22px;
+  }
+  
+  .published-date{
+    font-size: 12px;
+  }
+  
+  .line {
+    border-left: 2px solid black;
+    height: 100px;
+    margin-left: 3%;
+  }

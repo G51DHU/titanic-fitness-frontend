@@ -1,0 +1,78 @@
+.login-page-background{
+    height: 100vh;
+    max-width: 100%;
+    background: linear-gradient(#A9EACF 37%,#D8C39B 63%);
+  }
+
+  .login-form-border{
+    justify-content: center;
+    align-items: center;
+  }
+  .login-component{ /* login box border*/
+    margin-left: 38vw;
+    margin-top:10vh;
+    background: linear-gradient(#FFF0D4 10%,#7DCCAB 100%);
+    position: absolute;
+    border-radius: 30px;
+  }
+  .login-form{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title{
+    width: 80%;
+    height: 20%;
+    border-bottom: 3px solid black;
+    font-size: 22pt;
+    padding-top: 30px ;
+    margin-bottom:20px;
+    padding-bottom: 20px;
+  }
+  .Username-input{
+    border-radius: 25pt;
+    border: 1px solid black;
+    height:22px;
+    width:60%;
+  }
+  .password-input{
+    border-radius: 25pt;
+    border: 1px solid black;
+    height:22px;
+    width:60%;
+  }
+  .password-container{
+    margin-top: 20px;
+  }
+  
+  .login-form div label{
+    font-size: 20px;
+    font-weight: 300; 
+    margin-top: 3px; /* gives gap for the labels to the input*/
+  }
+  .forgot-password-container{
+    margin-top:2px;
+  }
+  .submit-button-container{
+    margin-top: 20px;
+  }
+  
+  .submit-button{
+    width:50%;
+    height:10%;
+    background-color: #A9EACF;
+    border-radius:25pt ;
+    font-size: 22pt;
+    border: 1px solid black;
+    margin-top: 20px;
+  }
+  .titanic-fittness-logo{
+    width:25%;
+    height: 50%; 
+    margin-left: 37.5%;
+  }

@@ -1,0 +1,48 @@
+.subcsriptions{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.subscripton-plans{
+    display: flex;
+    flex-direction: row;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-top: 30px;
+}
+
+.plan{
+    align-items: center;
+    margin:12pt;
+    background-color: #D2FFEC ;
+    font-size: 20px;
+    width: 250px;
+}
+
+.plan div{
+    margin: 15pt;
+    height: 280pt;
+}
+
+.plan p{
+    height: 110pt;
+}
+
+
+.fat{
+    font-weight: bold;
+}
+
+.pablo{
+    font-weight: bold;
+}
+
+.damn{
+    font-weight: bold;
+}
+
+.plan hr{
+    background-color: black;
+    height: 1px;
+}

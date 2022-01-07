@@ -1,0 +1,52 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+
+    height: 100px;
+
+    padding-left:  10%;
+    padding-right: 10%;
+    
+}
+
+.logo{
+    height:150%;
+    flex:1;
+    padding-right: 50%;
+}
+
+
+.header a {
+    border-radius: 10pt;
+    min-width: 100px;
+
+    height: 40%;
+    width: 20%;
+    margin: 10px;
+    background-color: #7DCCAB;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.header input:first-of-type{
+    margin-right: 10pt;
+}
+
+@media (max-width: 500px) { 
+    .logo{
+        padding-right: 0%;
+    }
+    
+}
+
