@@ -1,0 +1,324 @@
+.App{
+    width:100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+body{
+    margin: 0;
+}
+
+/* Navbar */
+
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    height: 100px;
+    width: 100%;
+    background-color: #7DCCAB;
+}
+
+.Link-Container a{
+    background-color: #D2FFEC;
+    padding: 2vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: black;
+    border-radius: 10pt;
+    transition: all 0.2s;
+}
+
+.Navbar div a:hover{
+    background-color: #a3ffd9;
+}
+
+.Home-Button{
+    width: 3vw;
+    padding: 0.5vw;
+    background: #FBBF4FD4;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.Home-Button:hover{
+    background: #fdb32ad4;
+}
+
+.Dropdown{
+    display: none;
+    background: #98E1C3;
+}
+
+.PlansBtn:hover .Dropdown{
+    display: block;
+}
+
+/* Navbar End */
+
+/* footer */
+
+.Footer{
+    background-color: #2D5277;
+    position:static ;
+    width: 100vw;
+    max-width: 100%;
+    bottom: 0;
+}
+
+.Footer img{
+    width: 20vw;
+    height: 20vh;
+}
+
+/* footer end */
+
+/* Home Page Component */
+
+.Homepage-background{
+    height: 100vh;
+    align-items: center;
+}
+
+.App-Ad{
+    background: linear-gradient(270deg,  #7DCCAB 0%, rgba(255, 219, 153, 0.83) 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20vh;
+    margin-left: 9%;
+    width: 82%;
+}
+
+.App-Ad img{
+    width: 50%;
+    margin: 5vw;
+}
+
+.App-Ad-Text-Container{
+    padding: 5vw;
+    border-right: solid 2px black;
+}
+
+.App-Ad-Title{
+    font-weight: normal;
+    font-size: 3vw;
+}
+
+.App-Ad-Text{
+    font-weight: normal;
+    font-size: 1vw;
+}
+
+
+/* Home Page Component End */
+
+/* Register Component */
+
+.Register-form-container{
+    background: linear-gradient( #FFEDCBB2 10%,  #7DCCAB 100%);
+    width: 50vw;
+    min-height: 60vh;
+    margin-left: 25vw;
+    margin-top: 12.5vh;
+    margin-bottom: 12.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25pt;
+}
+
+.Register-form-container h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 3vw;
+    border-bottom: solid 2px black;
+    width: 60%;
+}
+
+.Register-form-container form{
+    font-size: 2vw;
+    width: 50vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Register-form-container form input{
+    border:solid 1px black;
+    border-radius: 25pt;
+}
+
+.Register-form-container form div{
+    margin-bottom: 2vh;
+}
+
+.Email-container, .Username-container{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Username-container input{
+    width: 40%;
+    height: 3vh;
+}
+.Username-container{
+    width: 100%;
+}
+
+.Email-container input{
+    width: 55%;
+    height: 3vh;
+}
+.Email-container{
+    width: 100%;
+}
+
+
+.password-container, .checkbox-container{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.password-container{
+    width: 100%;
+}
+
+.password-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.password-container input{
+    width: 80%;
+    height: 3vh; 
+}
+
+.Password-Conditions{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.password-req-not{
+    color: red;
+    font-size: 1vw;
+}
+
+.password-req-met{
+    display: none;
+}
+
+.Submitbtn{
+    width: 30%;
+    height: 10%;
+    background-color: #D2FFEC;
+    font-size: 2vw;
+}
+
+.Submitbtn:hover{
+    background-color: #acf1d5;
+}
+
+.Disabled-Submitbtn{
+    width: 30%;
+    height: 10%;
+    background-color: lightgrey;
+    font-size: 2vw;
+}
+
+/* Register Component End*/
+
+
+
+
+/* My Blogs Component End*/
+
+.MyBlogsContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+}
+
+.MyBlogsContainer-Title-Container h1{
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.MyBlogsContainer-Form-Container{
+    height: 4vh;
+}
+
+.Search-Bar{
+    background: #D2FFEC;
+    border: 1px solid black;
+    width: 20vw;
+    height: 3vh;
+}
+
+.Search-Submit{
+    border: 1px solid black;
+    background: #7DCCAB;
+    height: 3vh;
+    border-top-left-radius: 25pt ;
+    border-bottom-left-radius: 25pt;
+}
+
+.MyBlogsContainer-Featured-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 30vh;
+    width: 100%;
+    background: #A9EACF;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
+
+.MyBlogsContainer-Featured-Container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:1rem;
+    width: 98%;
+    background: #A4C6EC;
+    padding-bottom: 20vh;
+}
+
+.MyBlogsContainer-MyWorkouts-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height:30vh;
+    max-width: 100%;
+    background: #A9EACF;
+    margin-bottom: 10vh;
+}
+
+.MyBlogsContainer-MyWorkouts-Container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:1rem;
+    width: 98%;
+    background: #A4C6EC;
+    padding-bottom: 20vh;
+}
+
+/* My Blogs Component End*/
