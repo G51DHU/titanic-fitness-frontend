@@ -2,9 +2,9 @@ import { Link } from "react-router-dom"
 import homeButtonImg from '@a/home.svg'
 
 export default function NavbarComp(){
-    function PlansDropdown(){
+    //function PlansDropdown(){
 
-    }
+    //}
 
 
     return(
