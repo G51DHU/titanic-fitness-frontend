@@ -10,26 +10,35 @@ import {
   Outlet
  } from 'react-router-dom';
 
- import Register from '@c/register';
- import Homepage from '@c/homepage'
+ import Header from '@c/global/header';
+ import Breadcrumb from '@c/global/breadcrumb';
  import Footer from '@c/global/footer';
+
+ import Homepage from '@c/homepage'
+ import LoginPage from '@c/login';
+ import RegisterPage from '@c/register';
+ 
  import Navbar from '@c/global/navbar';
+
  import TempBlog from '@c/blog/tempblog';
  import CreateBlog from '@c/blog/create-blog';
  import MyBlogs from '@c/blog/my-blog';
  import BlogDisplay from '@c/blog/blogs';
- import Header from '@c/global/header';
- import LoginBox from '@c/login';
 
 function App() {
   return (
     <div className="App">
       <Router>
+
         <Routes>
           <Route path="/" element={<div><Header loggedIn={false} /><Homepage /></div>}></Route>
-          <Route path="/Login"  element={<LoginBox/>} />
-          <Route path="/Register" element={<Register/>}></Route>
-          <Route path="/User/" element={
+
+          <Route path="/auth">
+            <Route path="login"  element={<LoginPage/>}></Route>
+            <Route path="register" element={<RegisterPage/>}></Route>
+          </Route>
+
+          <Route path="/user" element={
             <div>
               <Header loggedIn={true}/>
               <Navbar/>
@@ -50,6 +59,7 @@ function App() {
           </Route>
         </Routes>
         <Footer/>
+
       </Router>
     </div>
   );
