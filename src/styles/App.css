@@ -65,18 +65,6 @@ body{
 
 /* footer */
 
-.Footer{
-    background-color: #2D5277;
-    position:static ;
-    width: 100vw;
-    max-width: 100%;
-    bottom: 0;
-}
-
-.Footer img{
-    width: 20vw;
-    height: 20vh;
-}
 
 /* footer end */
 
