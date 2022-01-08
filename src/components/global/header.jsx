@@ -42,8 +42,8 @@ export default function Header(props){
     return(
         <header style={style["header"]}>
             <img style={style["logo"]} src={logo} alt="logo"></img> 
-            <Link style={style["header-button"]} to="/Login">Login</Link>
-            <Link style={style["header-button"]} value="sign up" to="/Register">Register</Link>
+            <Link style={style["header-button"]} to="/auth/login">Login</Link>
+            <Link style={style["header-button"]} value="sign up" to="/auth/register">Register</Link>
         </header>
     )
 }
