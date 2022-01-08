@@ -39,7 +39,7 @@ export default function HomePageComp(){
             <div style={style["app-ad"]}>
                 <div style={style['app-ad-text-container']}>
                     <h1 style={style['app-ad-title']}>Check out our APP</h1>
-                    <h4 style={style['app-ad-text']}>Available on Android, iOS, and Windows</h4>
+                    <text style={style['app-ad-text']}>Available on Android, iOS, and Windows</text>
                 </div>
                 <img style={style['app-ad > img']}src={adimg} alt="phone tablet laptop" />
             </div>
