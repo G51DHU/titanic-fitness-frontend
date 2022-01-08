@@ -24,12 +24,12 @@ const style = {
         borderRight: "solid 2px black"},
     
     "app-ad-title":{
-        fontWeight: "normal",
-        fontSize: "3vw"
+        fontSize: "250%",
+        textAlign: "centre",
     },
     "app-ad-text":{
         fontWeight: "normal",
-        fontSize: "1vw"
+        fontSize: "90%"
     }
 }
 
@@ -38,7 +38,7 @@ export default function HomePageComp(){
         <div style={style['homepage-background']}>
             <div style={style["app-ad"]}>
                 <div style={style['app-ad-text-container']}>
-                    <h1 style={style['app-ad-title']}>Check out our APP</h1>
+                    <h1 style={style['app-ad-title']}>Check out our app.</h1>
                     <text style={style['app-ad-text']}>Available on Android, iOS, and Windows</text>
                 </div>
                 <img style={style['app-ad > img']}src={adimg} alt="phone tablet laptop" />
