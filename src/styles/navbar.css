@@ -1,0 +1,51 @@
+/* Navbar */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    height: 100px;
+    width: 100%;
+    background-color: #7DCCAB;
+}
+
+.PlansBtn, .Link-Container a{
+    background-color: #D2FFEC;
+    padding: 2vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: black;
+    border-radius: 10pt;
+    transition: all 0.2s;
+}
+
+.PlansBtn:hover{
+    background-color: #a3ffd9;
+}
+
+.Home-Button{
+    width: 3vw;
+    padding: 0.5vw;
+    background: #FBBF4FD4;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.Home-Button:hover{
+    background: #fdb32ad4;
+}
+
+.Dropdown{
+    display: none;
+    background: #98E1C3;
+}
+
+.PlansBtn:hover .Dropdown{
+    display: block;
+}
