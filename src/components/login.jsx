@@ -1,13 +1,15 @@
-import { useState } from 'react'
 import logo from '@a/logo-cropped.svg'
 import "@s/login.css"
-import {Navigate} from 'react-router-dom';
+import { useState } from 'react'
+
+import {Link, useNavigate} from "react-router-dom"
 
 
 export default function LoginPage(){
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const [isValidUser, setIsValidUser] = useState(false)
+    const navigate = useNavigate()
 
     function LogInUser(e){
         e.preventDefault();
@@ -26,18 +28,12 @@ export default function LoginPage(){
         .then(data => console.log(data))
         .then(
             data => {
-                if (data == "True"){
-                    setIsValidUser(true)
-                }
+                if (data === "True"){setIsValidUser(true)}
             }
-        )    
-    }
-
-    if (isValidUser == true){
-        return <Navigate to="/user"></Navigate>
+        )
+        .then(navigate("/user"))  
     }
     
-    else{
         return(
             <div className='login-page-background'>
                 <div className='login-component'>
@@ -52,12 +48,12 @@ export default function LoginPage(){
                             <input type='password' value={password} onChange={(e) => setPassword(e.target.value)}/>
                         </label>
                         {/*Need to add in forgotten password page*/}
-                        <text className='forgot-password-link'>Forgotten password?</text>
+                        <div className='forgot-password-link'>Forgotten password?</div>
                         <input className='submit-button' type="submit" value="Submit"/>
                     </form>
-                    <img src={logo} width="409" height="222" className='titanic-fitness-logo' alt="Titanic Fitness logo"/>
+                    <Link className="link-wrap-titanic-fitness-logo" to="/"><img src={logo} width="409" height="222" alt="Titanic Fitness logo"/></Link>
                 </div>
             </div>
         )
-    }
+    
 }
