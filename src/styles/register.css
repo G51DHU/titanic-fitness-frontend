@@ -1,97 +1,50 @@
-.register-page-background{
-  background: linear-gradient(#A9EACF 37%,#D8C39B 63%);
-  height: 95vh;
-}
-
-.register-form{
-    background: linear-gradient( #FFEDCBB2 10%,  #7DCCAB 100%);
-    width: 50vw;
-    min-height: 60vh;
-    margin-left: 25vw;
-    margin-top: 12.5vh;
-    margin-bottom: 12.5vh;
+.register-form, 
+.register-form > form, 
+.register-form > form > label > input, 
+.password-container,
+.password-container > label > input {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 25pt;
+    text-align: center;
 }
 
-.register-form > h1{
-    text-align: center;
-    font-weight: normal;
-    font-size: 3vw;
-    border-bottom: solid 2px black;
-    width: 60%;
+.register-form{
+    background: linear-gradient(180deg, #A9EACF 30.73%, rgba(216, 195, 155, 0.63) 100%);
+    height: 95.6vh;
 }
 
 .register-form > form{
-    font-size: 2vw;
-    width: 50vw;
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 2%;
+    border-radius: 30px;
+    background: linear-gradient(#FFF0D4 10%,#7DCCAB 100%);
 }
 
-.register-form > form > input{
-    border:solid 1px black;
-    border-radius: 25pt;
+.register-form > form > h1{
+    font-size: xx-large;
+    border-bottom: solid 2px black;
 }
 
-.register-form > form > div{
-    margin-bottom: 2vh;
+.register-form > form > label, .password-container > label{
+    font-size: 100%;
 }
 
-.Email-container, .Username-container{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Username-container input{
-    width: 40%;
-    height: 3vh;
-}
-.Username-container{
-    width: 100%;
-}
-
-.Email-container input{
-    width: 55%;
-    height: 3vh;
-}
-.Email-container{
-    width: 100%;
-}
-
-
-.password-container, .checkbox-container{ 
-    display: flex;
+.password-container{ 
     flex-direction: row;
-    align-items: center;
-}
-
-.password-container{
     width: 100%;
+    gap: 4%;
 }
 
-.password-container div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.register-form > form > label > input, .password-container > label > input {
+    border:solid 1px black;
+    border-radius: 30px;
     width: 100%;
-}
-
-.password-container input{
-    width: 80%;
-    height: 3vh; 
 }
 
 .Password-Conditions{
     display: flex;
     flex-direction: column;
-
 }
 
 .password-req-not{
@@ -103,18 +56,18 @@
     display: none;
 }
 
-.Submitbtn{
+.submitbtn-enabled{
     width: 30%;
     height: 10%;
     background-color: #D2FFEC;
     font-size: 2vw;
 }
 
-.Submitbtn:hover{
+.submitbtn:hover{
     background-color: #acf1d5;
 }
 
-.Disabled-Submitbtn{
+.-submitbtn-disabled{
     width: 30%;
     height: 10%;
     background-color: lightgrey;
