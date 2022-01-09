@@ -49,11 +49,11 @@ function App() {
           </Route>
 
           <Route path="/user" element={
-            <>
+            <div>
               <Header loggedIn={true}/>
               <Navbar/>
               <Outlet/>
-            </>
+            </div>
           }>
             <Route path="subscriptions" element={<Subscriptions></Subscriptions>}>
               <Route path="purchase"></Route>
