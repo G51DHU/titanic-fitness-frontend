@@ -1,13 +1,15 @@
-.login-page-background{
-  height: 95.6vh;
-  background: linear-gradient(180deg, #A9EACF 30.73%, rgba(216, 195, 155, 0.63) 100%);
-}
-
 .login-component, .login-form, .login-form > label{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+}
+
+.login-page-background{
+  height: 95.6vh;
+  background: linear-gradient(180deg, #A9EACF 30.73%, rgba(216, 195, 155, 0.63) 100%);
+
 }
  
 .login-component{
@@ -16,22 +18,32 @@
 
 .login-form{
   height: 40%;
-  width: 20%;
   padding: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+
   border-radius: 30px;
 
-  gap: 1%;
+  gap: 5%;
 
   background: linear-gradient(#FFF0D4 10%,#7DCCAB 100%);
+  margin-bottom: 5%;
+
 }
 
 .login-form > h1{
-  font-size: xx-large;
-  margin: 0px;
+  width: 80%;
+  height: 18%;
+
+  border-bottom: solid 2px black;
+  margin: 5px;
+
+  text-align: center;
+  font-size: 200%;
 }
 
 .login-form > label{
-  width: 70%;
+  width: 90%;
   height: 18%;
   font-size: 20px;
   box-sizing: content-box;
@@ -43,6 +55,7 @@
   border-radius: 25pt;
   border: 1px solid black;
   box-sizing: content-box;
+  padding: 2%;
 }
 
 .forgot-password-link{
@@ -53,15 +66,18 @@
   width:50%;
   height:10%;
 
+  padding: 1%;
   border: 1px solid black;
   border-radius:25pt ;
-
-  margin-top: 5%;
+  margin-top: 4%;
 
   background-color: #D2FFEC;
-  font-size: 120%;
+  font-size: 100%;
 }
 
-.titanic-fitness-logo{
-  width: 10%;
+.link-wrap-titanic-fitness-logo{
+  height: 20%;
+}
+.link-wrap-titanic-fitness-logo > img{
+  height: 100%;
 }
