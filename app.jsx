@@ -1,4 +1,4 @@
-import '@s/App.css';
+import '@s/global.css';
 
 import react from "react"
 import ReactDOM from 'react-dom';
@@ -25,6 +25,7 @@ import {
  import MyBlogs from '@c/blog/my-blog';
  import BlogDisplay from '@c/blog/blogs';
 
+import Subscriptions from "@c/subscriptions"
 function App() {
   return (
     <div className="App">
@@ -48,13 +49,13 @@ function App() {
           </Route>
 
           <Route path="/user" element={
-            <div>
+            <>
               <Header loggedIn={true}/>
               <Navbar/>
               <Outlet/>
-            </div>
+            </>
           }>
-            <Route path="subscriptions">
+            <Route path="subscriptions" element={<Subscriptions></Subscriptions>}>
               <Route path="purchase"></Route>
             </Route>
             
