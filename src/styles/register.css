@@ -1,8 +1,6 @@
 .register-form, 
 .register-form > form, 
-.register-form > form > label > input, 
-.password-container,
-.password-container > label > input {
+.register-form > form > label{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,20 +24,32 @@
     border-bottom: solid 2px black;
 }
 
-.register-form > form > label, .password-container > label{
-    font-size: 100%;
-}
-
-.password-container{ 
-    flex-direction: row;
-    width: 100%;
-    gap: 4%;
-}
-
 .register-form > form > label > input, .password-container > label > input {
     border:solid 1px black;
     border-radius: 30px;
-    width: 100%;
+    box-sizing: border-box;
+}
+
+.label-email{
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+.label-email, .input-email{
+    width: 80%;
+    height: 100%;
+}
+
+.password-container{
+    display: flex;
+    gap: 5%;
+}
+
+.password-container > label{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
 }
 
 .Password-Conditions{
@@ -56,20 +66,36 @@
     display: none;
 }
 
-.submitbtn-enabled{
-    width: 30%;
-    height: 10%;
-    background-color: #D2FFEC;
-    font-size: 2vw;
+.label-show-password{
+    flex-direction: row;
 }
 
-.submitbtn:hover{
+.submitbtn{
+    width: 30%;
+    height: 10%;
+    border-radius: 30px;
+    font-size: 1.8vw;
+}
+
+.submitbtn-enabled{
+    background-color: #D2FFEC;
+}
+
+.submitbtn-disabled{
+    background-color: #5a6b64;
+    color: #D2FFEC;
+}
+
+.submitbtn-enabled:hover{
     background-color: #acf1d5;
 }
 
-.-submitbtn-disabled{
-    width: 30%;
+.link-wrap-titanic-fitness-logo{
+    margin: 0px;
+    padding: 0px;
     height: 10%;
-    background-color: lightgrey;
-    font-size: 2vw;
+}
+
+.link-wrap-titanic-fitness-logo > img{
+    height: 100%;
 }
