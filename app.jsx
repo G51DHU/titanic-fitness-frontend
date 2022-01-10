@@ -51,6 +51,7 @@ function App() {
           <Route path="/user" element={
             <div>
               <Header loggedIn={true}/>
+              <Breadcrumb/>
               <Navbar/>
               <Outlet/>
             </div>
