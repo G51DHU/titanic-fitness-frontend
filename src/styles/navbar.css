@@ -6,14 +6,14 @@
     justify-content: center;
     align-items: center;
     position: sticky;
-    height: 100px;
+    height: 70px;
     width: 100%;
     background-color: #7DCCAB;
 }
 
 .PlansBtn, .Link-Container a{
     background-color: #D2FFEC;
-    padding: 2vh;
+    padding: 1.2vh;
     padding-left: 4vw;
     padding-right: 4vw;
     margin-right: 3vw;
