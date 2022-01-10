@@ -3,13 +3,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
 .login-page-background{
   height: 95.6vh;
   background: linear-gradient(180deg, #A9EACF 30.73%, rgba(216, 195, 155, 0.63) 100%);
-
 }
  
 .login-component{
@@ -28,7 +26,6 @@
 
   background: linear-gradient(#FFF0D4 10%,#7DCCAB 100%);
   margin-bottom: 5%;
-
 }
 
 .login-form > h1{
