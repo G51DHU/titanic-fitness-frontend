@@ -1,0 +1,67 @@
+.profile-page{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-title{
+    font-family: Saira;
+    font-size: 300%;
+    text-decoration: underline;
+ }
+
+.user-picture{
+    position: relative;
+    border-radius: 50%;
+    margin-top:2%;
+    vertical-align: middle;
+    width: 140px;
+    height: 140px;
+}
+
+.user-username{
+    font-family: Ropa Sans;
+    font-size:250%;
+    margin-top: 1%;  
+}
+  
+.profile-page > section{
+    display: flex;
+    align-items: center;
+
+    background-color: #EDFFF7;
+    border: 1px solid black;
+    width:900px;
+    height: 200px;
+    border-radius: 5px;
+    margin-top: 3%;
+}
+
+.profile-page > section > .img-wrap{
+    display: flex;
+    justify-content: center;
+    height: 70%;
+    width: 40%;
+}
+
+.profile-page > section > .img-wrap > img{
+    height: 100%;
+}
+
+.profile-page > section > div{
+    margin-left: 2%;
+    font-family:Saira; 
+    font-weight: 400;
+    font-size: 30px;
+    
+}
+
+.profile-page > section > div > h2,
+.profile-page > section > div > h3{
+    margin:0px
+}
+  
+.blog-dropdown-container{
+    -ms-transform: rotate(20deg); /* IE 9 */
+    transform: rotate(270deg);
+}

@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.MyBlogsContainer-Title-Container h1{
+.MyBlogsContainer-Title-Container > h1{
     font-weight: 400;
     text-decoration: underline;
 }
@@ -43,7 +43,7 @@
     margin-top: 3vh;
 }
 
-.MyBlogsContainer-Featured-Container div{
+.MyBlogsContainer-Featured-Container > div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,7 +65,7 @@
     margin-bottom: 10vh;
 }
 
-.MyBlogsContainer-MyWorkouts-Container div{
+.MyBlogsContainer-MyWorkouts-Container > div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,3 +76,152 @@
 }
 
 /* My Blogs Component End*/
+
+/* #######  Login Page Css*/
+
+
+
+
+
+
+
+
+
+
+
+/*#####  Profile Page Content  ######*/
+
+
+
+
+
+
+
+
+
+/*#######  Workout Script Page #######*/
+
+.profile-pic-portrait{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.user-profile-pic{
+  width: 100%;
+  height: auto;
+}
+.user-profile-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-left: 25%;
+  background: linear-gradient(#D2FFEC 18%,#ffffff 100%);
+  width:600px
+}
+.workout-description-container{
+  margin-top: 3%;
+  margin-left: 5%;
+  font-family: "Ropa Sans";
+}
+.workoutscript-username-title{
+  font-size: 30px;
+}
+.real-name-title{
+  font-size: 22px;
+}
+.published-date{
+  font-size: 12px;
+}
+.line{
+  border-left: 2px solid black;
+  height: 100px;
+  margin-left: 3%;
+}
+.excersise-list-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Ropa Sans;
+}
+.excersise-title{
+  font-size:40px ;
+  margin-top: 11%;
+  text-decoration: underline;
+}
+.excersise{
+  font-size: 22px;
+  margin-top: 20%;
+}
+.start-excersise-button-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 4%;
+
+}
+.workout-page-link{
+  width:200px;
+  height: 30px;
+  background-color: #98E1C3;
+  border-radius: 3px;
+  margin-left: -7%;
+  font-family: Ropa Sans;
+  font-size: 26px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* workout page */
+ 
+.description-row-container{
+  display: flex;
+  flex: row;
+  align-items: center;
+  font-family: Ropa Sans;
+  margin-top: 5%;
+  margin-left:30%;                                            
+}
+.excersise-workoutpage-title{
+  font-size: 40px;                                  
+}
+.diffuculty-container{
+  margin-left: 10%;
+  background: linear-gradient(#F55B5B 20%, #C4C4C4 90%);
+  text-align: center;
+  width:140px;
+  height:50px;
+  border-radius: 3px;
+}
+.diffculty{
+  font-size: 22px;
+  text-align: center;
+  margin-top:10%;
+}
+.video-container{
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*###########    Payment Page  ############# */ 
