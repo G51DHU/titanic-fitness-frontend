@@ -20,7 +20,7 @@ export default function ProfilePage(props){
                         <h3 className='goals-total-steps'>2500/5000</h3>
                         <progress className='goals-progress-bar' value="32" max="100"> 32% </progress>    
                     </div>   
-                    <ExpandMoreIcon sx={{ fontSize: 60 }} />
+                    <div className='dropdown-triangle'></div>
                 </section>
 
                 <section className='section-statistics'>
@@ -29,7 +29,7 @@ export default function ProfilePage(props){
                         <h2 className='statistics-stats-title'>Statistics</h2>
                         <p className='ranking'>1st On Global Leaderboard</p>
                     </div>
-                    <ExpandMoreIcon sx={{ fontSize: 60 }} />
+                    <div className='dropdown-triangle'></div>
                 </section>
 
                 <section className='meal-plan-container'>
@@ -38,7 +38,7 @@ export default function ProfilePage(props){
                         <h2 className='meal-plan-title'>Meal Plans</h2>
                         <div className='meal-plans-created'>No Meal Plans Created</div>
                     </div>
-                    <ExpandMoreIcon sx={{ fontSize: 60 }} />
+                    <div className='dropdown-triangle'></div>
                 </section>
 
                 <section className='blog-container'>
@@ -47,7 +47,7 @@ export default function ProfilePage(props){
                         <h2 className='blog-title'>My Blog</h2>
                         <div className='blog-display'>No Blog</div>
                     </div>
-                    <ExpandMoreIcon sx={{ fontSize: 60 }} />
+                    <div className='dropdown-triangle'></div>
                 </section>
         </div>
     )

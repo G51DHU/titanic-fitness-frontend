@@ -10,22 +10,31 @@ import {
   Outlet
  } from 'react-router-dom';
 
- import Header from '@c/global/header';
- import Breadcrumb from '@c/global/breadcrumb';
- import Footer from '@c/global/footer';
+import Header from '@c/global/header';
+import Breadcrumb from '@c/global/breadcrumb';
+import Footer from '@c/global/footer';
 
- import Homepage from '@c/homepage'
- import LoginPage from '@c/login';
- import RegisterPage from '@c/register';
+import Homepage from '@c/homepage'
+import LoginPage from '@c/login';
+import RegisterPage from '@c/register';
  
- import Navbar from '@c/global/navbar';
+import Navbar from '@c/global/navbar';
+import ProfilePage from "@c/profile-page"
 
- import TempBlog from '@c/blog/tempblog';
- import CreateBlog from '@c/blog/create-blog';
- import MyBlogs from '@c/blog/my-blog';
- import BlogDisplay from '@c/blog/blogs';
+import TempBlog from '@c/blog/tempblog';
+import CreateBlog from '@c/blog/create-blog';
+import MyBlogs from '@c/blog/my-blog';
+import BlogDisplay from '@c/blog/blogs';
+
+import WorkoutPage from "@c/workout-page"
+import WorkoutScript from "@c/workout-script"
+
+
 
 import Subscriptions from "@c/subscriptions"
+import PaymentPage from "@c/payment-page"
+
+
 function App() {
   return (
     <div className="App">
@@ -53,6 +62,7 @@ function App() {
               <Header loggedIn={true}/>
               <Breadcrumb/>
               <Navbar/>
+              <ProfilePage/>
               <Outlet/>
             </div>
           }>
@@ -77,7 +87,9 @@ function App() {
                     <Route path="blog" element={<BlogDisplay/>}/>
                 </Route>
                 <Route path="workouts">
-                    <Route path="workout"/>
+                    <Route path="workout">
+                      <Route path="workout-script"/>
+                    </Route>
                 </Route>
             </Route>
 

@@ -25,13 +25,11 @@ export default function LoginPage(){
             body: JSON.stringify(credentials),
         })
         .then(response => response.json())
-        .then(data => console.log(data))
-        .then(
-            data => {
-                if (data === "True"){setIsValidUser(true)}
-            }
-        )
-        .then(navigate("/user"))  
+        .then(data => {if (data === "true"){
+            console.log(data); 
+            setIsValidUser(true); 
+            navigate("/user")
+        }})
     }
     
         return(
