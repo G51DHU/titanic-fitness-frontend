@@ -8,6 +8,7 @@
     "@mui/icons-material": "^5.2.0",
     "@mui/material": "^5.2.2",
     "react-responsive-carousel": "^3.2.22",
+    "@babel/core":"7.0.0",
     
     "@vitejs/plugin-react": "^1.1.1",
     "react": "latest",
