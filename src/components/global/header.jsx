@@ -47,11 +47,17 @@ const style = {
 export default function Header(props){
     return(
         <header style={style["header"]}>
+<<<<<<< HEAD
             <Link style={style["link-wrap-titanic-fitness-logo"]} to="/"><img style={style["logo"]} src={logo} alt="Titanic Fitness logo"/></Link>
             <div style={style["header-button-seperator"]}>
                 <Link style={style["header-button"]} to="/auth/login">Login</Link>
                 <Link style={style["header-button"]} value="sign up" to="/auth/register">Register</Link>
             </div>
+=======
+            <img style={style["logo"]} src={logo} alt="logo"></img> 
+            <Link style={style["header-button"]} to="/auth/login">Login</Link>
+            <Link style={style["header-button"]} value="sign up" to="/auth/register">Register</Link>
+>>>>>>> f373ba6cb2195841599321346788a7b01adc072d
         </header>
     )
 }

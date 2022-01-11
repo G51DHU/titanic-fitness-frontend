@@ -18,6 +18,32 @@ export default function RegisterPage(){
     const [minSpecialChar, setminSpecialChar] = useState(false)
     const [minLowercase, setminLowercase] = useState(false)
     const [minChar, setminChar] = useState(false)
+<<<<<<< HEAD
+=======
+    const [passwordCondtions, setPasswordConditions] = useState(false)
+
+    const navigate = useNavigate()
+
+    function updateUsername(event){
+        setUsername(event.target.value)
+    }
+
+    function updateEmail(event){
+        setEmail(event.target.value)
+    }
+
+    function updatePassword(event){
+        setPassword(event.target.value)
+    }
+
+    function updateConfirmPassword(event){
+        setConfirmPassword(event.target.value)
+    }
+
+    function showPassword(){
+        setPasswordVisible(!PasswordVisible)
+    }
+>>>>>>> f373ba6cb2195841599321346788a7b01adc072d
     
     const navigate = useNavigate()
 
@@ -72,6 +98,11 @@ export default function RegisterPage(){
 
     function SumbitRegistration(event){
         event.preventDefault()
+<<<<<<< HEAD
+=======
+        
+        passwordValidation(Password)
+>>>>>>> f373ba6cb2195841599321346788a7b01adc072d
         if(minUppercase===true && minLowercase===true && minChar===true && minDigit===true && minSpecialChar===true){
             if (Password===ConfirmPassword){
                 navigate("/user")
@@ -81,6 +112,7 @@ export default function RegisterPage(){
 
 
     return(
+<<<<<<< HEAD
         <div className="register-form">
             <form onSubmit={SumbitRegistration}>
                 <h1>Register</h1>
@@ -129,6 +161,59 @@ export default function RegisterPage(){
                 <label className={minChar? "password-req-met":"password-req-not"}>password requires at least 8 characters</label>
             </div>
             <Link className="link-wrap-titanic-fitness-logo" to="/"><img src={logo} width="409" height="222" alt="Titanic Fitness logo"/></Link>
+=======
+        <div className="register-page-background">
+            <div className="register-form">
+                <form onSubmit={ValidateFORM}>
+                    <h1>Register</h1>
+                    <label>
+                        Username
+                        <input className="input-username" type="text" onChange={updateUsername} />
+                    </label>
+                    <label>
+                        Email
+                        <input className="input-email" type="email" onChange={updateEmail} />    
+                    </label>
+
+                    <div className="password-container">
+                        <label>
+                            Password
+                            <input 
+                                type={PasswordVisible? "text":"password"}
+                                onChange={updatePassword}> 
+                            </input>
+                        </label>
+                        <label>
+                            Confirm Password
+                            <input 
+                                type={PasswordVisible? "text":"password"}
+                                onChange={updateConfirmPassword}>
+                            </input>
+                        </label>
+                    </div>
+                    
+                    <div className="Password-Conditions">
+                        <label className={minUppercase? "password-req-met":"password-req-not"}>password requires at least 1 uppercase character</label>
+                        <label className={minLowercase? "password-req-met":"password-req-not"}>password requires at least 1 lowercase character</label>
+                        <label className={minSpecialChar? "password-req-met":"password-req-not"}>password requires at least 1 special character</label>
+                        <label className={minDigit? "password-req-met":"password-req-not"}>password requires at least 1 digit</label>
+                        <label className={minChar? "password-req-met":"password-req-not"}>password requires at least 8 characters</label>
+                    </div>
+
+                    <label>
+                        Show Password
+                        <input onChange={showPassword} type="checkbox" />
+                    </label>
+
+                    <input 
+                        className={!ReadyToSubmit?"Disabled-Submitbtn"  : "Submitbtn" }
+                        type="submit" 
+                        value="Register"
+                        disabled={!ReadyToSubmit}>
+                    </input>
+                </form>
+            </div>
+>>>>>>> f373ba6cb2195841599321346788a7b01adc072d
         </div>
     )
 }
