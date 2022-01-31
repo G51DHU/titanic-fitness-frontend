@@ -2,7 +2,7 @@ export default function MyBlogsComp(){
     return(
         <div className="MyBlogsContainer">
             <div className="MyBlogsContainer-Title-Container">
-                <h1>My Workouts</h1>
+                <h1>My Blogs</h1>
             </div>
 
             <div className="MyBlogsContainer-Form-Container">
@@ -14,13 +14,13 @@ export default function MyBlogsComp(){
 
             <div className="MyBlogsContainer-Featured-Container">
                 <div>
-                    <h3>Feautured Workouts</h3>
+                    <h3>Featured blogs</h3>
                 </div>
             </div>
 
             <div className="MyBlogsContainer-MyWorkouts-Container">
                 <div>
-                <h3>My Workouts</h3>
+                <h3>My blogs</h3>
                 
                 </div>
             </div>

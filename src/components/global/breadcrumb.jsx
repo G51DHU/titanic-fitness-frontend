@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {Link, useLocation} from "react-router-dom"
 
 export default function Breadcrumb(){
@@ -50,17 +49,6 @@ export default function Breadcrumb(){
                     ))
                 }          
             </div>
-=======
-
-export default function Breadcrumb(){
-    const style = {
-        "breadcrumbs":{width: "100%"}
-    }
-
-    return(
-        <div className="breadcrumb">
-
->>>>>>> f373ba6cb2195841599321346788a7b01adc072d
         </div>
     )
 }

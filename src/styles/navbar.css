@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     position: sticky;
-    height: 70px;
+    height: 60px;
     width: 100%;
     background-color: #7DCCAB;
 }
@@ -30,7 +30,7 @@
 }
 
 .Home-Button{
-    width: 3vw;
+    width: 2.5vw;
     padding: 0.5vw;
     background: #FBBF4FD4;
     border-radius: 50%;

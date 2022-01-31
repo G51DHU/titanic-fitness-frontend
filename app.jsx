@@ -19,11 +19,14 @@ import {
  import RegisterPage from '@c/register';
  
  import Navbar from '@c/global/navbar';
+ import ProfilePage from "@c/profile-page"
 
- import TempBlog from '@c/blog/tempblog';
+ import Subscriptions from "@c/subscriptions"
+
  import CreateBlog from '@c/blog/create-blog';
- import MyBlogs from '@c/blog/my-blog';
- import BlogDisplay from '@c/blog/blogs';
+ import MyWorkouts from '@c/blog/my-blog';
+ import MyBlogs from "@c/my-blog"
+import PaymentPage from "@c/payment-page.jsx"
 
 function App() {
   return (
@@ -31,7 +34,14 @@ function App() {
       <Router>
 
         <Routes>
-          <Route path="/" element={<div><Header loggedIn={false} /><Homepage /></div>}></Route>
+          <Route path="/" element={
+          <div>
+            <Header loggedIn={false}/>
+            <Navbar></Navbar>
+            <Homepage />
+          </div>
+        }>
+        </Route>
 
           <Route path="/auth">
             <Route path="login"  element={<LoginPage/>}></Route>
@@ -44,37 +54,16 @@ function App() {
               <Breadcrumb/>
               <Navbar/>
               <ProfilePage/>
-              <Outlet/>
             </div>
-          }>
-            <Route path="subscriptions" element={<Subscriptions></Subscriptions>}>
-              <Route path="purchase"></Route>
-            </Route>
+          }/>
             
-            <Route path="my-settings"/>
 
-            <Route path="my-plans"/>
-            <Route path="my-workouts"/>
-            <Route path="my-meal-plans"/>
-            <Route path="my-statistics"/>
-            <Route path="my-home"/>
-            <Route path="my-goals"/>
-            <Route path="my-blogs" element={<MyBlogs/>}/>
+          <Route path="/user/create-blog" element={<><Header></Header> <Breadcrumb></Breadcrumb><CreateBlog/></>}/>
 
-            <Route path="create-blog" element={<CreateBlog/>}/>
-
-            <Route path="public">
-                <Route path="blogs" element={<TempBlog/>}>
-                    <Route path="blog" element={<BlogDisplay/>}/>
-                </Route>
-                <Route path="workouts">
-                    <Route path="workout">
-                      <Route path="workout-script"/>
-                    </Route>
-                </Route>
-            </Route>
-
-          </Route>
+          <Route path="/user/subscriptions" element={<><Header></Header> <Breadcrumb></Breadcrumb><Subscriptions></Subscriptions></>}/>
+          <Route path="/user/subscriptions/purchase" element={<><Header></Header> <Breadcrumb></Breadcrumb><PaymentPage/></>}/>
+          <Route path="/user/my-blogs" element={<><Header></Header> <Breadcrumb></Breadcrumb><Navbar></Navbar><MyBlogs/></>}/>
+          <Route path="/user/my-workouts" element={<><Header></Header> <Breadcrumb></Breadcrumb><Navbar></Navbar><MyWorkouts/></>}/>        
         </Routes>
         <Footer/>
 

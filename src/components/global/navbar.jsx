@@ -20,8 +20,8 @@ export default function NavbarComp(){
             </div>
                 <Link to="/user"><img src={homeButtonImg} alt="Home" className="Home-Button" /></Link>
             <div className="Link-Container">
-                <Link to="/user/my-goals">Goals</Link>
-                <Link to="/user/my-blogs">My Blog</Link>
+                <Link to="/user/my-blogs">Blogs</Link>
+                <Link to="/user/my-workouts">Workouts</Link>
             </div>
         </div>
     )
