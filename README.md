@@ -15,7 +15,7 @@
 3) Enter the following commands into the terminal.
 
 ```
-git clone "https://github.com/G51DHU/titanic-fitness
+git clone "https://github.com/G51DHU/titanic-fitness-frontend
 
 cd titanic-fitness
 
